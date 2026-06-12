@@ -22,6 +22,16 @@
       <h1>ことばカード</h1>
       <p class="subtitle">えいごも まなべる フラッシュカード</p>
     </header>
+    <div class="home-seg-row">
+      <div class="seg big" id="homeLangSeg">
+        <button data-v="ja" class="on">🇯🇵 にほんご</button>
+        <button data-v="en">🇺🇸 えいご</button>
+      </div>
+      <div class="seg big" id="homeModeSeg">
+        <button data-v="flash" class="on">📖 カード</button>
+        <button data-v="quiz">🎯 クイズ</button>
+      </div>
+    </div>
     <div class="deck-grid" id="deckGrid"></div>
     <footer class="home-footer">
       <button id="settingsBtn" class="text-btn">⚙️ せってい</button>
@@ -44,15 +54,14 @@
       <div id="flashCard" class="card">
         <div class="card-emoji" id="cardEmoji">🍎</div>
         <div class="card-words">
-          <button class="word-ja" id="wordJa">りんご <span class="speaker">🔊</span></button>
-          <button class="word-en" id="wordEn">Apple <span class="speaker">🔊</span></button>
+          <button class="word-main" id="wordMain">りんご <span class="speaker">🔊</span></button>
         </div>
       </div>
 
-      <!-- クイズモード -->
+      <!-- クイズモード（音声出題 → 絵を選ぶ） -->
       <div id="quizCard" class="card hidden">
-        <div class="quiz-question">これは なにかな？</div>
-        <div class="card-emoji quiz-emoji" id="quizEmoji">🍎</div>
+        <button class="quiz-ask" id="quizAsk" aria-label="もういちど きく">🔊</button>
+        <div class="quiz-question" id="quizQuestion">りんごは どれかな？</div>
         <div class="quiz-choices" id="quizChoices"></div>
       </div>
     </div>
@@ -68,14 +77,6 @@
   <div id="settingsModal" class="modal hidden">
     <div class="modal-box">
       <h2>せってい</h2>
-      <div class="setting-row">
-        <span class="setting-label">ことば</span>
-        <div class="seg" id="langSeg">
-          <button data-v="both" class="on">りょうほう</button>
-          <button data-v="ja">にほんご</button>
-          <button data-v="en">えいご</button>
-        </div>
-      </div>
       <div class="setting-row">
         <span class="setting-label">はやさ</span>
         <div class="seg" id="speedSeg">

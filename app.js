@@ -14,14 +14,15 @@
   };
 
   function loadSettings() {
+    let s;
     try {
-      return Object.assign(
-        { lang: "both", speed: "normal", shuffle: "off" },
-        JSON.parse(localStorage.getItem("kotoba-settings") || "{}")
-      );
+      s = JSON.parse(localStorage.getItem("kotoba-settings") || "{}");
     } catch {
-      return { lang: "both", speed: "normal", shuffle: "off" };
+      s = {};
     }
+    const merged = Object.assign({ lang: "ja", mode: "flash", speed: "normal", shuffle: "off" }, s);
+    if (merged.lang !== "ja" && merged.lang !== "en") merged.lang = "ja"; // 旧「りょうほう」設定の移行
+    return merged;
   }
   function saveSettings() {
     localStorage.setItem("kotoba-settings", JSON.stringify(state.settings));
@@ -33,8 +34,8 @@
   const deckGrid = $("deckGrid");
   const progressLabel = $("progressLabel"), progressFill = $("progressFill");
   const flashCard = $("flashCard"), quizCard = $("quizCard");
-  const cardEmoji = $("cardEmoji"), wordJa = $("wordJa"), wordEn = $("wordEn");
-  const quizEmoji = $("quizEmoji"), quizChoices = $("quizChoices");
+  const cardEmoji = $("cardEmoji"), wordMain = $("wordMain");
+  const quizQuestion = $("quizQuestion"), quizChoices = $("quizChoices"), quizAsk = $("quizAsk");
   const playBtn = $("playBtn"), modeBtn = $("modeBtn");
   const settingsModal = $("settingsModal");
 
@@ -46,15 +47,26 @@
     speechSynthesis.onvoiceschanged = refreshVoices;
   }
 
+  // macOS/iOSのおふざけ系ノベルティ音声（英語で誤選択されると最悪なので除外）
+  const NOVELTY = ["Albert", "Bad News", "Bahh", "Bells", "Boing", "Bubbles", "Cellos",
+    "Deranged", "Eddy", "Flo", "Fred", "Good News", "Grandma", "Grandpa", "Jester",
+    "Junior", "Kathy", "Organ", "Ralph", "Reed", "Rocko", "Sandy", "Shelley",
+    "Superstar", "Trinoids", "Whisper", "Wobble", "Zarvox"];
+
   function pickVoice(lang) {
-    const list = voices.filter((v) => v.lang.replace("_", "-").startsWith(lang));
-    // iOS/macOSの標準音声を優先
-    const preferred = lang === "ja" ? ["Kyoko", "O-Ren"] : ["Samantha", "Karen", "Daniel"];
-    for (const name of preferred) {
-      const hit = list.find((v) => v.name.includes(name));
-      if (hit) return hit;
-    }
-    return list[0] || null;
+    const prefix = lang === "ja" ? "ja" : "en";
+    let list = voices.filter((v) => v.lang.replace("_", "-").toLowerCase().startsWith(prefix));
+    list = list.filter((v) => !NOVELTY.some((n) => v.name.startsWith(n)));
+    const score = (v) => {
+      let s = 0;
+      if (/enhanced|premium|natural|neural|拡張/i.test(v.name)) s += 8;
+      if (lang === "en" && /^(Samantha|Ava|Allison|Susan|Zoe|Nicky|Joelle|Alex|Karen|Daniel|Moira|Tessa|Serena|Google US English|Microsoft)/.test(v.name)) s += 4;
+      if (lang === "ja" && /^(Kyoko|O-?Ren|Google 日本語|Hattori)/.test(v.name)) s += 4;
+      if (v.lang.replace("_", "-").toLowerCase() === (lang === "ja" ? "ja-jp" : "en-us")) s += 2;
+      if (v.localService) s += 1;
+      return s;
+    };
+    return list.sort((a, b) => score(b) - score(a))[0] || null;
   }
 
   function speak(text, lang) {
@@ -65,13 +77,18 @@
       u.lang = lang === "ja" ? "ja-JP" : "en-US";
       const v = pickVoice(lang);
       if (v) u.voice = v;
-      u.rate = 0.85; // 子ども向けにすこしゆっくり
+      u.rate = lang === "ja" ? 0.9 : 1.0; // 英語は等速のほうが自然
       u.onend = resolve;
       u.onerror = resolve;
       speechSynthesis.speak(u);
       // onendが発火しない環境向けの保険
-      setTimeout(resolve, 1000 + text.length * 350);
+      setTimeout(resolve, 1500 + text.length * 350);
     });
+  }
+
+  function speakWord(card) {
+    const lang = state.settings.lang;
+    return speak(lang === "ja" ? card.ja : card.en, lang);
   }
 
   // ---------- 効果音（WebAudio・素材ファイル不要） ----------
@@ -113,12 +130,13 @@
   }
 
   function openDeck(deck) {
+    audio(); // iOSのオーディオ解錠（タップ起点）
     state.deck = deck;
     state.cards = deck.cards.slice();
     if (state.settings.shuffle === "on") shuffle(state.cards);
     state.index = 0;
-    state.mode = "flash";
-    modeBtn.textContent = "❓";
+    state.mode = state.settings.mode;
+    updateModeBtn();
     home.classList.add("hidden");
     player.classList.remove("hidden");
     renderCard();
@@ -152,24 +170,31 @@
       void flashCard.offsetWidth;
       flashCard.style.animation = "";
       cardEmoji.textContent = card.e;
-      wordJa.innerHTML = card.ja + ' <span class="speaker">🔊</span>';
-      wordEn.innerHTML = card.en + ' <span class="speaker">🔊</span>';
-      wordJa.style.display = state.settings.lang === "en" ? "none" : "";
-      wordEn.style.display = state.settings.lang === "ja" ? "none" : "";
+      const word = state.settings.lang === "ja" ? card.ja : card.en;
+      wordMain.innerHTML = word + ' <span class="speaker">🔊</span>';
     } else {
       flashCard.classList.add("hidden");
       quizCard.classList.remove("hidden");
       quizCard.style.animation = "none";
       void quizCard.offsetWidth;
       quizCard.style.animation = "";
-      quizEmoji.textContent = card.e;
-      renderChoices(card);
+      renderQuiz(card);
     }
   }
 
-  function renderChoices(card) {
-    const useEn = state.settings.lang === "en";
-    const label = (c) => (useEn ? c.en : c.ja);
+  // ---------- クイズ（音声出題 → 絵を選ぶ） ----------
+  function questionText(card) {
+    return state.settings.lang === "ja"
+      ? card.ja + "は どれかな？"
+      : "Find the " + card.en.toLowerCase() + "!";
+  }
+
+  function askQuestion(card) {
+    return speak(questionText(card), state.settings.lang);
+  }
+
+  function renderQuiz(card) {
+    quizQuestion.textContent = questionText(card);
     const pool = state.deck.cards.filter((c) => c !== card);
     shuffle(pool);
     const options = [card, pool[0], pool[1]].filter(Boolean);
@@ -179,15 +204,19 @@
     options.forEach((opt) => {
       const btn = document.createElement("button");
       btn.className = "choice-btn";
-      btn.textContent = label(opt);
+      btn.textContent = opt.e;
+      btn.setAttribute("aria-label", opt.ja);
       btn.addEventListener("click", async () => {
+        audio();
         if (opt === card) {
           btn.classList.add("correct");
-          soundCorrect();
           quizChoices.querySelectorAll("button").forEach((b) => (b.disabled = true));
-          await speak(card.ja, "ja");
-          if (state.settings.lang === "both") await speak(card.en, "en");
-          setTimeout(() => { if (state.mode === "quiz") next(); }, 700);
+          soundCorrect();
+          const praise = state.settings.lang === "ja"
+            ? "せいかい！ " + card.ja + "！"
+            : "Great job! " + card.en + "!";
+          await speak(praise, state.settings.lang);
+          setTimeout(() => { if (state.mode === "quiz") next(); }, 500);
         } else {
           btn.classList.add("wrong");
           btn.disabled = true;
@@ -196,17 +225,19 @@
       });
       quizChoices.appendChild(btn);
     });
+
+    askQuestion(card); // 表示と同時に音声で出題
   }
 
   // ---------- ナビゲーション ----------
   function next() {
     state.index = (state.index + 1) % state.cards.length;
-    soundPage();
+    if (state.mode === "flash") soundPage();
     renderCard();
   }
   function prev() {
     state.index = (state.index - 1 + state.cards.length) % state.cards.length;
-    soundPage();
+    if (state.mode === "flash") soundPage();
     renderCard();
   }
 
@@ -221,13 +252,7 @@
     const token = ++state.playToken;
 
     while (state.playing && token === state.playToken) {
-      const card = state.cards[state.index];
-      if (state.settings.lang !== "en") await speak(card.ja, "ja");
-      if (!state.playing || token !== state.playToken) break;
-      if (state.settings.lang !== "ja") {
-        await pause(400);
-        await speak(card.en, "en");
-      }
+      await speakWord(state.cards[state.index]);
       if (!state.playing || token !== state.playToken) break;
       await pause(SPEED_PAUSE[state.settings.speed]);
       if (!state.playing || token !== state.playToken) break;
@@ -245,6 +270,12 @@
 
   function pause(ms) { return new Promise((r) => setTimeout(r, ms)); }
 
+  // ---------- モード表示 ----------
+  function updateModeBtn() {
+    // ボタンは「切り替え先」を表示
+    modeBtn.textContent = state.mode === "flash" ? "🎯" : "📖";
+  }
+
   // ---------- イベント ----------
   $("closeBtn").addEventListener("click", closeDeck);
   $("prevBtn").addEventListener("click", () => { stopAutoplay(); prev(); });
@@ -252,6 +283,7 @@
 
   playBtn.addEventListener("click", () => {
     audio(); // iOSのオーディオ解錠
+    if (state.mode !== "flash") return;
     if (state.playing) stopAutoplay();
     else startAutoplay();
   });
@@ -259,18 +291,16 @@
   modeBtn.addEventListener("click", () => {
     stopAutoplay();
     state.mode = state.mode === "flash" ? "quiz" : "flash";
-    modeBtn.textContent = state.mode === "flash" ? "❓" : "🃏";
+    state.settings.mode = state.mode;
+    saveSettings();
+    syncSegs();
+    updateModeBtn();
     renderCard();
   });
 
-  wordJa.addEventListener("click", () => { audio(); speak(state.cards[state.index].ja, "ja"); });
-  wordEn.addEventListener("click", () => { audio(); speak(state.cards[state.index].en, "en"); });
-  cardEmoji.addEventListener("click", async () => {
-    audio();
-    const card = state.cards[state.index];
-    if (state.settings.lang !== "en") await speak(card.ja, "ja");
-    if (state.settings.lang !== "ja") await speak(card.en, "en");
-  });
+  wordMain.addEventListener("click", () => { audio(); speakWord(state.cards[state.index]); });
+  cardEmoji.addEventListener("click", () => { audio(); speakWord(state.cards[state.index]); });
+  quizAsk.addEventListener("click", () => { audio(); askQuestion(state.cards[state.index]); });
 
   // 設定
   $("settingsBtn").addEventListener("click", () => settingsModal.classList.remove("hidden"));
@@ -279,25 +309,38 @@
     if (e.target === settingsModal) settingsModal.classList.add("hidden");
   });
 
-  function bindSeg(id, key) {
-    const seg = $(id);
-    seg.querySelectorAll("button").forEach((btn) => {
-      if (btn.dataset.v === state.settings[key]) {
-        seg.querySelectorAll("button").forEach((b) => b.classList.remove("on"));
-        btn.classList.add("on");
-      }
-      btn.addEventListener("click", () => {
-        seg.querySelectorAll("button").forEach((b) => b.classList.remove("on"));
-        btn.classList.add("on");
-        state.settings[key] = btn.dataset.v;
-        saveSettings();
-        if (!player.classList.contains("hidden")) renderCard();
-      });
+  // セグメントボタン（ホームと設定の両方で使う）
+  const SEGS = [
+    ["homeLangSeg", "lang"],
+    ["homeModeSeg", "mode"],
+    ["speedSeg", "speed"],
+    ["shuffleSeg", "shuffle"],
+  ];
+
+  function syncSegs() {
+    SEGS.forEach(([id, key]) => {
+      $(id).querySelectorAll("button").forEach((b) =>
+        b.classList.toggle("on", b.dataset.v === state.settings[key])
+      );
     });
   }
-  bindSeg("langSeg", "lang");
-  bindSeg("speedSeg", "speed");
-  bindSeg("shuffleSeg", "shuffle");
+
+  SEGS.forEach(([id, key]) => {
+    $(id).querySelectorAll("button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        state.settings[key] = btn.dataset.v;
+        saveSettings();
+        syncSegs();
+        if (key === "mode" && !player.classList.contains("hidden")) {
+          stopAutoplay();
+          state.mode = btn.dataset.v;
+          updateModeBtn();
+          renderCard();
+        }
+        if (key === "lang" && !player.classList.contains("hidden")) renderCard();
+      });
+    });
+  });
 
   // ---------- PWA ----------
   if ("serviceWorker" in navigator && location.protocol === "https:") {
@@ -306,4 +349,5 @@
 
   // ---------- 起動 ----------
   renderHome();
+  syncSegs();
 })();

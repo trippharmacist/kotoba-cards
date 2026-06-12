@@ -34,7 +34,7 @@
   const deckGrid = $("deckGrid");
   const progressLabel = $("progressLabel"), progressFill = $("progressFill");
   const flashCard = $("flashCard"), quizCard = $("quizCard");
-  const cardEmoji = $("cardEmoji"), wordMain = $("wordMain");
+  const cardEmoji = $("cardEmoji"), wordMain = $("wordMain"), cryBtn = $("cryBtn");
   const quizQuestion = $("quizQuestion"), quizChoices = $("quizChoices"), quizAsk = $("quizAsk");
   const playBtn = $("playBtn"), modeBtn = $("modeBtn");
   const settingsModal = $("settingsModal");
@@ -69,7 +69,7 @@
     return list.sort((a, b) => score(b) - score(a))[0] || null;
   }
 
-  function speak(text, lang) {
+  function speak(text, lang, opts) {
     return new Promise((resolve) => {
       if (!("speechSynthesis" in window)) return resolve();
       speechSynthesis.cancel();
@@ -77,7 +77,8 @@
       u.lang = lang === "ja" ? "ja-JP" : "en-US";
       const v = pickVoice(lang);
       if (v) u.voice = v;
-      u.rate = lang === "ja" ? 0.9 : 1.0; // 英語は等速のほうが自然
+      u.rate = (opts && opts.rate) || (lang === "ja" ? 0.9 : 1.0); // 英語は等速のほうが自然
+      u.pitch = (opts && opts.pitch) || 1;
       u.onend = resolve;
       u.onerror = resolve;
       speechSynthesis.speak(u);
@@ -89,6 +90,13 @@
   function speakWord(card) {
     const lang = state.settings.lang;
     return speak(lang === "ja" ? card.ja : card.en, lang);
+  }
+
+  function speakCry(card) {
+    if (!card.s) return Promise.resolve();
+    const lang = state.settings.lang;
+    // ピッチを上げて、なきごえらしく楽しい声に
+    return speak(card.s[lang], lang, { pitch: 1.35, rate: lang === "ja" ? 1.0 : 1.05 });
   }
 
   // ---------- 効果音（WebAudio・素材ファイル不要） ----------
@@ -172,6 +180,12 @@
       cardEmoji.textContent = card.e;
       const word = state.settings.lang === "ja" ? card.ja : card.en;
       wordMain.innerHTML = word + ' <span class="speaker">🔊</span>';
+      if (card.s) {
+        cryBtn.textContent = "🐾 " + card.s[state.settings.lang];
+        cryBtn.classList.remove("hidden");
+      } else {
+        cryBtn.classList.add("hidden");
+      }
     } else {
       flashCard.classList.add("hidden");
       quizCard.classList.remove("hidden");
@@ -216,6 +230,7 @@
             ? "せいかい！ " + card.ja + "！"
             : "Great job! " + card.en + "!";
           await speak(praise, state.settings.lang);
+          await speakCry(card); // ごほうびに なきごえ
           setTimeout(() => { if (state.mode === "quiz") next(); }, 500);
         } else {
           btn.classList.add("wrong");
@@ -252,8 +267,14 @@
     const token = ++state.playToken;
 
     while (state.playing && token === state.playToken) {
-      await speakWord(state.cards[state.index]);
+      const card = state.cards[state.index];
+      await speakWord(card);
       if (!state.playing || token !== state.playToken) break;
+      if (card.s) {
+        await pause(300);
+        await speakCry(card);
+        if (!state.playing || token !== state.playToken) break;
+      }
       await pause(SPEED_PAUSE[state.settings.speed]);
       if (!state.playing || token !== state.playToken) break;
       next();
@@ -299,7 +320,13 @@
   });
 
   wordMain.addEventListener("click", () => { audio(); speakWord(state.cards[state.index]); });
-  cardEmoji.addEventListener("click", () => { audio(); speakWord(state.cards[state.index]); });
+  cryBtn.addEventListener("click", () => { audio(); speakCry(state.cards[state.index]); });
+  cardEmoji.addEventListener("click", () => {
+    audio();
+    const card = state.cards[state.index];
+    if (card.s) speakCry(card); // 絵をタップ → なきごえ（なければ ことば）
+    else speakWord(card);
+  });
   quizAsk.addEventListener("click", () => { audio(); askQuestion(state.cards[state.index]); });
 
   // 設定

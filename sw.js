@@ -1,5 +1,5 @@
 // ことばカード — オフライン対応 Service Worker
-const CACHE = "kotoba-v2";
+const CACHE = "kotoba-v3";
 const ASSETS = [
   "./",
   "./index.html",

@@ -147,6 +147,21 @@ body {
   font-size: 34px; font-weight: bold; color: var(--teal-dark);
 }
 .word-main:active { background: var(--teal-bg); }
+
+.cry-btn {
+  background: #fdf0d5;
+  border: none;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  color: #a9743a;
+  padding: 10px 22px;
+  margin-top: 6px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.cry-btn:active { transform: scale(0.95); }
 .speaker { font-size: 0.6em; vertical-align: middle; opacity: 0.6; }
 
 /* ---------- クイズ ---------- */

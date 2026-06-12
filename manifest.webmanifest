@@ -1,0 +1,15 @@
+{
+  "name": "ことばカード — 英語もまなべる知育フラッシュカード",
+  "short_name": "ことばカード",
+  "description": "日本語と英語が学べる、お子さま向けの無料フラッシュカードアプリ",
+  "lang": "ja",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#e8f2ee",
+  "theme_color": "#2f9e8f",
+  "icons": [
+    { "src": "icons/icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

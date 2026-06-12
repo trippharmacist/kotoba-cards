@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#2f9e8f"/>
+  <rect x="96" y="120" width="320" height="272" rx="36" fill="#ffffff"/>
+  <text x="256" y="290" font-size="150" text-anchor="middle" font-family="Hiragino Maru Gothic ProN, sans-serif" fill="#25786d" font-weight="bold">あ</text>
+  <text x="370" y="200" font-size="80" text-anchor="middle" font-family="Helvetica, sans-serif" fill="#e57368" font-weight="bold">A</text>
+</svg>

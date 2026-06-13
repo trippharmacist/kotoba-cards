@@ -20,7 +20,7 @@
     } catch {
       s = {};
     }
-    const merged = Object.assign({ lang: "ja", mode: "flash", speed: "normal", shuffle: "off" }, s);
+    const merged = Object.assign({ lang: "ja", mode: "flash", speed: "normal", shuffle: "off", visual: "photo" }, s);
     if (merged.lang !== "ja" && merged.lang !== "en") merged.lang = "ja"; // 旧「りょうほう」設定の移行
     return merged;
   }
@@ -165,6 +165,23 @@
   }
 
   // ---------- カード表示 ----------
+  function usePhoto(card) {
+    return state.settings.visual === "photo" && !!card.img;
+  }
+
+  function visualHTML(card, cls) {
+    return usePhoto(card)
+      ? '<img class="' + cls + '" src="' + card.img + '" alt="' + card.ja + '">'
+      : card.e;
+  }
+
+  function preloadNeighbors() {
+    [state.index + 1, state.index - 1].forEach((i) => {
+      const c = state.cards[(i + state.cards.length) % state.cards.length];
+      if (c.img) { const im = new Image(); im.src = c.img; }
+    });
+  }
+
   function renderCard() {
     const card = state.cards[state.index];
     progressLabel.textContent = (state.index + 1) + " / " + state.cards.length;
@@ -177,7 +194,7 @@
       flashCard.style.animation = "none";
       void flashCard.offsetWidth;
       flashCard.style.animation = "";
-      cardEmoji.textContent = card.e;
+      cardEmoji.innerHTML = visualHTML(card, "card-photo");
       const word = state.settings.lang === "ja" ? card.ja : card.en;
       wordMain.innerHTML = word + ' <span class="speaker">🔊</span>';
       if (card.s) {
@@ -194,6 +211,7 @@
       quizCard.style.animation = "";
       renderQuiz(card);
     }
+    preloadNeighbors();
   }
 
   // ---------- クイズ（音声出題 → 絵を選ぶ） ----------
@@ -217,8 +235,8 @@
     quizChoices.innerHTML = "";
     options.forEach((opt) => {
       const btn = document.createElement("button");
-      btn.className = "choice-btn";
-      btn.textContent = opt.e;
+      btn.className = "choice-btn" + (usePhoto(opt) ? " has-photo" : "");
+      btn.innerHTML = visualHTML(opt, "choice-photo");
       btn.setAttribute("aria-label", opt.ja);
       btn.addEventListener("click", async () => {
         audio();
@@ -342,6 +360,7 @@
     ["homeModeSeg", "mode"],
     ["speedSeg", "speed"],
     ["shuffleSeg", "shuffle"],
+    ["visualSeg", "visual"],
   ];
 
   function syncSegs() {
@@ -364,7 +383,7 @@
           updateModeBtn();
           renderCard();
         }
-        if (key === "lang" && !player.classList.contains("hidden")) renderCard();
+        if ((key === "lang" || key === "visual") && !player.classList.contains("hidden")) renderCard();
       });
     });
   });

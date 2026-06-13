@@ -1,0 +1,18 @@
+{
+ "snake": {
+  "slug": "snake",
+  "file": "snake.jpg",
+  "title": "File:Angolan python (Python anchietae) head.jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Angolan_python_(Python_anchietae)_head.jpg"
+ },
+ "mouse": {
+  "slug": "mouse",
+  "file": "mouse.jpg",
+  "title": "File:Apodemus sylvaticus bosmuis.jpg",
+  "author": "Rasbak",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Apodemus_sylvaticus_bosmuis.jpg"
+ }
+}

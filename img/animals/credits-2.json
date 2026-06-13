@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "chicken",
+    "file": "img/animals/chicken.jpg",
+    "ja": "にわとり",
+    "en": "Chicken",
+    "title": "File:Rooster portrait, France.jpg",
+    "author": "Clément Bardot",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rooster_portrait,_France.jpg"
+  },
+  {
+    "slug": "penguin",
+    "file": "img/animals/penguin.jpg",
+    "ja": "ぺんぎん",
+    "en": "Penguin",
+    "title": "File:Pesto the penguin (adult plumage) 2.jpg",
+    "author": "Ethmostigmus",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pesto_the_penguin_(adult_plumage)_2.jpg"
+  },
+  {
+    "slug": "owl",
+    "file": "img/animals/owl.jpg",
+    "ja": "ふくろう",
+    "en": "Owl",
+    "title": "File:Barred owl perched in a tree (46762644554).jpg",
+    "author": "U.S. Fish and Wildlife Service - Midwest Region",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Barred_owl_perched_in_a_tree_(46762644554).jpg"
+  },
+  {
+    "slug": "frog",
+    "file": "img/animals/frog.jpg",
+    "ja": "かえる",
+    "en": "Frog",
+    "title": "File:Australia green tree frog (Litoria caerulea) crop.jpg",
+    "author": "LiquidGhoul",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Australia_green_tree_frog_(Litoria_caerulea)_crop.jpg"
+  },
+  {
+    "slug": "turtle",
+    "file": "img/animals/turtle.jpg",
+    "ja": "かめ",
+    "en": "Turtle",
+    "title": "File:Radiated tortoise (Astrochelys radiata) Tsimanampetsotsa.jpg",
+    "author": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Radiated_tortoise_(Astrochelys_radiata)_Tsimanampetsotsa.jpg"
+  },
+  {
+    "slug": "snake",
+    "file": "img/animals/snake.jpg",
+    "ja": "へび",
+    "en": "Snake",
+    "title": "File:Butter-Tessera-Corn-Snake.jpg",
+    "author": "Novelyst",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Butter-Tessera-Corn-Snake.jpg"
+  },
+  {
+    "slug": "crocodile",
+    "file": "img/animals/crocodile.jpg",
+    "ja": "わに",
+    "en": "Crocodile",
+    "title": "File:Crocodile Basking in the Sun 3.jpg",
+    "author": "Amaury Laporte",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Crocodile_Basking_in_the_Sun_3.jpg"
+  },
+  {
+    "slug": "camel",
+    "file": "img/animals/camel.jpg",
+    "ja": "らくだ",
+    "en": "Camel",
+    "title": "File:Camelus bactrianus in western Mongolia 06.jpg",
+    "author": "Alexandr frolov",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Camelus_bactrianus_in_western_Mongolia_06.jpg"
+  },
+  {
+    "slug": "koala",
+    "file": "img/animals/koala.jpg",
+    "ja": "こあら",
+    "en": "Koala",
+    "title": "File:Koala in tree 3.jpg",
+    "author": "Douglas Paul Perkins",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Koala_in_tree_3.jpg"
+  },
+  {
+    "slug": "gorilla",
+    "file": "img/animals/gorilla.jpg",
+    "ja": "ごりら",
+    "en": "Gorilla",
+    "title": "File:Artis Toddler gorilla Shambe sitting on a trunk - Artis Royal Zoo (10037445674).jpg",
+    "author": "Kitty Terwolbeck from The Netherlands",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Artis_Toddler_gorilla_Shambe_sitting_on_a_trunk_-_Artis_Royal_Zoo_(10037445674).jpg"
+  },
+  {
+    "slug": "fox",
+    "file": "img/animals/fox.jpg",
+    "ja": "きつね",
+    "en": "Fox",
+    "title": "File:Alaska Red Fox (Vulpes vulpes).jpg",
+    "author": "Gregory \"Slobirdr\" Smith",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Alaska_Red_Fox_(Vulpes_vulpes).jpg"
+  },
+  {
+    "slug": "wolf",
+    "file": "img/animals/wolf.jpg",
+    "ja": "おおかみ",
+    "en": "Wolf",
+    "title": "File:Scandinavian grey wolf Canis lupus.jpg",
+    "author": "Malene Thyssen",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Scandinavian_grey_wolf_Canis_lupus.jpg"
+  },
+  {
+    "slug": "deer",
+    "file": "img/animals/deer.jpg",
+    "ja": "しか",
+    "en": "Deer",
+    "title": "File:Sika Deer, Miyajima, Japan, 20240816 1653 3982.jpg",
+    "author": "Jakub Hałun",
+    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sika_Deer,_Miyajima,_Japan,_20240816_1653_3982.jpg"
+  },
+  {
+    "slug": "hedgehog",
+    "file": "img/animals/hedgehog.jpg",
+    "ja": "はりねずみ",
+    "en": "Hedgehog",
+    "title": "File:Erinaceus europaeus (Linnaeus, 1758).jpg",
+    "author": "Michael Gäbler",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Erinaceus_europaeus_(Linnaeus,_1758).jpg"
+  },
+  {
+    "slug": "mouse",
+    "file": "img/animals/mouse.jpg",
+    "ja": "ねずみ",
+    "en": "Mouse",
+    "title": "File:House mouse (Mus musculus) 2808.jpg",
+    "author": "Ahunt",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:House_mouse_(Mus_musculus)_2808.jpg"
+  }
+]

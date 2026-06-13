@@ -1,0 +1,172 @@
+[
+  {
+    "slug": "car",
+    "file": "car.jpg",
+    "ja": "くるま",
+    "en": "Car",
+    "title": "File:Red Smart Car Side View Driveway.jpg",
+    "author": "TudorTulok",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Red_Smart_Car_Side_View_Driveway.jpg"
+  },
+  {
+    "slug": "bus",
+    "file": "bus.jpg",
+    "ja": "ばす",
+    "en": "Bus",
+    "title": "File:Kaho Town Bus 103.jpg",
+    "author": "TangoDiscovery",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kaho_Town_Bus_103.jpg"
+  },
+  {
+    "slug": "truck",
+    "file": "truck.jpg",
+    "ja": "とらっく",
+    "en": "Truck",
+    "title": "File:Yamato delivery electrick truck, Hino.jpg",
+    "author": "Syced",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Yamato_delivery_electrick_truck,_Hino.jpg"
+  },
+  {
+    "slug": "fire-engine",
+    "file": "fire-engine.jpg",
+    "ja": "しょうぼうしゃ",
+    "en": "Fire engine",
+    "title": "File:Isuzu Elf, 6th Gen, Pumper truck, Fire-engine YCFD, Double-cab.jpg",
+    "author": "Mj-bird",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Isuzu_Elf,_6th_Gen,_Pumper_truck,_Fire-engine_YCFD,_Double-cab.jpg"
+  },
+  {
+    "slug": "ambulance",
+    "file": "ambulance.jpg",
+    "ja": "きゅうきゅうしゃ",
+    "en": "Ambulance",
+    "title": "File:Japanese Ambulance.jpg",
+    "author": "Crimage7777",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Japanese_Ambulance.jpg"
+  },
+  {
+    "slug": "police-car",
+    "file": "police-car.jpg",
+    "ja": "ぱとかー",
+    "en": "Police car",
+    "title": "File:Japanese police car 1.jpg",
+    "author": "Douglas Paul Perkins",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Japanese_police_car_1.jpg"
+  },
+  {
+    "slug": "train",
+    "file": "train.jpg",
+    "ja": "でんしゃ",
+    "en": "Train",
+    "title": "File:Sagami-Railway-11005F.jpg",
+    "author": "MaedaAkihiko",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sagami-Railway-11005F.jpg"
+  },
+  {
+    "slug": "bullet-train",
+    "file": "bullet-train.jpg",
+    "ja": "しんかんせん",
+    "en": "Bullet train",
+    "title": "File:Series-N700a-Mt.Fuji.jpg",
+    "author": "MaedaAkihiko",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Series-N700a-Mt.Fuji.jpg"
+  },
+  {
+    "slug": "steam-train",
+    "file": "steam-train.jpg",
+    "ja": "きかんしゃ",
+    "en": "Steam train",
+    "title": "File:JNR C57 180 20070818.jpg",
+    "author": "ja:User:TC411-507 aka JobanLineE531",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:JNR_C57_180_20070818.jpg"
+  },
+  {
+    "slug": "airplane",
+    "file": "airplane.jpg",
+    "ja": "ひこうき",
+    "en": "Airplane",
+    "title": "File:JA701A Boeing 777 ANA (7575887316).jpg",
+    "author": "Aeroprints.com",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:JA701A_Boeing_777_ANA_(7575887316).jpg"
+  },
+  {
+    "slug": "helicopter",
+    "file": "helicopter.jpg",
+    "ja": "へりこぷたー",
+    "en": "Helicopter",
+    "title": "File:Cyprian AgustaWestland AW139 search and rescue helicopter in flight in May 2016.JPG",
+    "author": "U.S. Navy photo by Mass Communication Specialist 3rd Class Bill Dodge",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Cyprian_AgustaWestland_AW139_search_and_rescue_helicopter_in_flight_in_May_2016.JPG"
+  },
+  {
+    "slug": "ship",
+    "file": "ship.jpg",
+    "ja": "ふね",
+    "en": "Ship",
+    "title": "File:2022-04-29 WSDOT ferry, MV SALISH - IMO 9618329 - Coupeville WA USA.jpg",
+    "author": "Gordon Leggett",
+    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2022-04-29_WSDOT_ferry,_MV_SALISH_-_IMO_9618329_-_Coupeville_WA_USA.jpg"
+  },
+  {
+    "slug": "bicycle",
+    "file": "bicycle.jpg",
+    "ja": "じてんしゃ",
+    "en": "Bicycle",
+    "title": "File:Purple bicycle leaning against a stone wall.jpg",
+    "author": "Savszymura",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Purple_bicycle_leaning_against_a_stone_wall.jpg"
+  },
+  {
+    "slug": "motorcycle",
+    "file": "motorcycle.jpg",
+    "ja": "ばいく",
+    "en": "Motorcycle",
+    "title": "File:Kawasaki Z1000 1977.jpg",
+    "author": "Steve Glover at Flickr",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kawasaki_Z1000_1977.jpg"
+  },
+  {
+    "slug": "taxi",
+    "file": "taxi.jpg",
+    "ja": "たくしー",
+    "en": "Taxi",
+    "title": "File:Condor Taxi 158 JPN Taxi.jpg",
+    "author": "Comyu",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Condor_Taxi_158_JPN_Taxi.jpg"
+  },
+  {
+    "slug": "tractor",
+    "file": "tractor.jpg",
+    "ja": "とらくたー",
+    "en": "Tractor",
+    "title": "File:Tractor plowing the field.jpg",
+    "author": "Sally V",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tractor_plowing_the_field.jpg"
+  },
+  {
+    "slug": "rocket",
+    "file": "rocket.jpg",
+    "ja": "ろけっと",
+    "en": "Rocket",
+    "title": "File:Soyuz TMA-9 launch.jpg",
+    "author": "Bill Ingalls",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Soyuz_TMA-9_launch.jpg"
+  }
+]

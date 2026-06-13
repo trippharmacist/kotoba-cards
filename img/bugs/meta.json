@@ -1,0 +1,81 @@
+{
+ "butterfly": {
+  "slug": "butterfly",
+  "file": "butterfly.jpg",
+  "title": "File:Monarch Butterfly Danaus plexippus Male Wing 2800px.jpg",
+  "author": "Photo by and (c)2007 Derek Ramsey (Ram-Man)",
+  "license": "GFDL 1.2",
+  "source": "https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Male_Wing_2800px.jpg"
+ },
+ "bee": {
+  "slug": "bee",
+  "file": "bee.jpg",
+  "ja": "はち",
+  "en": "Bee",
+  "title": "File:Honeybee landing on milkthistle02.jpg",
+  "author": "Fir0002",
+  "license": "GFDL 1.2",
+  "source": "https://commons.wikimedia.org/wiki/File:Honeybee_landing_on_milkthistle02.jpg",
+  "n_candidates": 6
+ },
+ "ladybug": {
+  "slug": "ladybug",
+  "file": "ladybug.jpg",
+  "title": "File:Seven-spot ladybird - Flickr - stanzebla.jpg",
+  "author": "stanze from Eure, France, Normandie,",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Seven-spot_ladybird_-_Flickr_-_stanzebla.jpg"
+ },
+ "ant": {
+  "slug": "ant",
+  "file": "ant.jpg",
+  "ja": "あり",
+  "en": "Ant",
+  "title": "File:Portrait of an ant, profile view.jpg",
+  "author": "Retro Lenses",
+  "license": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_an_ant,_profile_view.jpg",
+  "n_candidates": 6
+ },
+ "snail": {
+  "slug": "snail",
+  "file": "snail.jpg",
+  "ja": "かたつむり",
+  "en": "Snail",
+  "title": "File:Snail-wiki-120-Zachi-Evenor.jpg",
+  "author": "Zachi Evenor",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Snail-wiki-120-Zachi-Evenor.jpg",
+  "n_candidates": 6
+ },
+ "grasshopper": {
+  "slug": "grasshopper",
+  "file": "grasshopper.jpg",
+  "ja": "ばった",
+  "en": "Grasshopper",
+  "title": "File:Schistocerca shoshone 5564685.jpg",
+  "author": "Jesse Rorabaugh",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:Schistocerca_shoshone_5564685.jpg",
+  "n_candidates": 6
+ },
+ "spider": {
+  "slug": "spider",
+  "file": "spider.jpg",
+  "title": "File:Cross Orb Weaver Spider (48791718958).jpg",
+  "author": "James Johnstone from Ecclefechan, Scotland",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Cross_Orb_Weaver_Spider_(48791718958).jpg"
+ },
+ "caterpillar": {
+  "slug": "caterpillar",
+  "file": "caterpillar.jpg",
+  "ja": "いもむし",
+  "en": "Caterpillar",
+  "title": "File:Yellowish green caterpillar on the leaf - 2.jpg",
+  "author": "KKPCW",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Yellowish_green_caterpillar_on_the_leaf_-_2.jpg",
+  "n_candidates": 6
+ }
+}

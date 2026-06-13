@@ -135,6 +135,33 @@ body {
 .card-emoji {
   font-size: 140px;
   line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-photo {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.choice-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 17px;
+  display: block;
+}
+.choice-btn.has-photo { padding: 0; overflow: hidden; background: #fff; }
+
+.credits-link {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--gray);
 }
 
 .card-words { display: flex; flex-direction: column; align-items: center; gap: 4px; }

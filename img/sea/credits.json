@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "fish",
+    "file": "fish.jpg",
+    "ja": "さかな",
+    "en": "Fish",
+    "title": "File:Goldfish Fantail.jpg",
+    "author": "Pogrebnoj-Alexandroff",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Goldfish_Fantail.jpg"
+  },
+  {
+    "slug": "dolphin",
+    "file": "dolphin.jpg",
+    "ja": "いるか",
+    "en": "Dolphin",
+    "title": "File:010 Atlantic bottlenose dolphin jumping at Pelican point Photo by Giles Laurent.jpg",
+    "author": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:010_Atlantic_bottlenose_dolphin_jumping_at_Pelican_point_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+    "slug": "whale",
+    "file": "whale.jpg",
+    "ja": "くじら",
+    "en": "Whale",
+    "title": "File:001 Humpback whale breaching in Ballena Marine National Park Photo by Giles Laurent.jpg",
+    "author": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:001_Humpback_whale_breaching_in_Ballena_Marine_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+    "slug": "shark",
+    "file": "shark.jpg",
+    "ja": "さめ",
+    "en": "Shark",
+    "title": "File:Whale Shark in Shallow Water.jpg",
+    "author": "Feefiona123",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Whale_Shark_in_Shallow_Water.jpg"
+  },
+  {
+    "slug": "octopus",
+    "file": "octopus.jpg",
+    "ja": "たこ",
+    "en": "Octopus",
+    "title": "File:CaribbeanReefOctopus.jpg",
+    "author": "Alessandro Dona - I created this work entirely by myself.",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:CaribbeanReefOctopus.jpg"
+  },
+  {
+    "slug": "squid",
+    "file": "squid.jpg",
+    "ja": "いか",
+    "en": "Squid",
+    "title": "File:Bigfin reef squid (11760).jpg",
+    "author": "Rhododendrites",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bigfin_reef_squid_(11760).jpg"
+  },
+  {
+    "slug": "crab",
+    "file": "crab.jpg",
+    "ja": "かに",
+    "en": "Crab",
+    "title": "File:Sand crab (Ocypode brevicornis) at University Beach, Pondicherry 06.jpg",
+    "author": "Satdeep Gill",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sand_crab_(Ocypode_brevicornis)_at_University_Beach,_Pondicherry_06.jpg"
+  },
+  {
+    "slug": "shrimp",
+    "file": "shrimp.jpg",
+    "ja": "えび",
+    "en": "Shrimp",
+    "title": "File:Lysmata amboinensis Umitamago.jpg",
+    "author": "Totti",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lysmata_amboinensis_Umitamago.jpg"
+  },
+  {
+    "slug": "seal",
+    "file": "seal.jpg",
+    "ja": "あざらし",
+    "en": "Seal",
+    "title": "File:Harbor seal lying on rocks close up - DPLA - 571b34adaf125bf3766ba7c7d61d4dc1.jpg",
+    "author": "Garst, Warren, 1922-2016, photographer",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Harbor_seal_lying_on_rocks_close_up_-_DPLA_-_571b34adaf125bf3766ba7c7d61d4dc1.jpg"
+  },
+  {
+    "slug": "blowfish",
+    "file": "blowfish.jpg",
+    "ja": "ふぐ",
+    "en": "Blowfish",
+    "title": "File:Arothron nigropunctatus.jpg",
+    "author": "Richard Ling",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Arothron_nigropunctatus.jpg"
+  },
+  {
+    "slug": "tropical-fish",
+    "file": "tropical-fish.jpg",
+    "ja": "ねったいぎょ",
+    "en": "Tropical fish",
+    "title": "File:Amphiprion ocellaris (Clown anemonefish) by Nick Hobgood.jpg",
+    "author": "Nick Hobgood",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Amphiprion_ocellaris_(Clown_anemonefish)_by_Nick_Hobgood.jpg"
+  },
+  {
+    "slug": "seashell",
+    "file": "seashell.jpg",
+    "ja": "かいがら",
+    "en": "Seashell",
+    "title": "File:Shell on the Beach - Flickr - wildxplorer.jpg",
+    "author": "Karunakar Rayker",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Shell_on_the_Beach_-_Flickr_-_wildxplorer.jpg"
+  }
+]

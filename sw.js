@@ -1,5 +1,5 @@
 // ことばカード — オフライン対応 Service Worker
-const CACHE = "kotoba-v3";
+const CACHE = "kotoba-v4";
 const ASSETS = [
   "./",
   "./index.html",
@@ -7,6 +7,8 @@ const ASSETS = [
   "./app.js",
   "./data.js",
   "./manifest.webmanifest",
+  "./credits.html",
+  "./credits.json",
   "./icons/icon.svg",
   "./icons/icon-180.png",
   "./icons/icon-512.png"
@@ -27,7 +29,19 @@ self.addEventListener("activate", (e) => {
 });
 
 self.addEventListener("fetch", (e) => {
+  if (e.request.method !== "GET" || !e.request.url.startsWith(self.location.origin)) return;
   e.respondWith(
-    caches.match(e.request).then((hit) => hit || fetch(e.request))
+    caches.match(e.request).then(
+      (hit) =>
+        hit ||
+        fetch(e.request).then((res) => {
+          // 写真は初回表示時にキャッシュ（オフライン対応・110枚を事前DLしない）
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then((c) => c.put(e.request, copy));
+          }
+          return res;
+        })
+    )
   );
 });

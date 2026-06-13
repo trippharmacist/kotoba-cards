@@ -1,0 +1,117 @@
+{
+ "moon": {
+  "slug": "moon",
+  "file": "moon.jpg",
+  "ja": "つき",
+  "en": "Moon",
+  "title": "File:Full Moon Luc Viatour.jpg",
+  "author": "Luc Viatour",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Full_Moon_Luc_Viatour.jpg",
+  "n_candidates": 6
+ },
+ "cloud": {
+  "slug": "cloud",
+  "file": "cloud.jpg",
+  "ja": "くも",
+  "en": "Cloud",
+  "title": "File:Clouds in the sky in August 2014.JPG",
+  "author": "Jakec",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Clouds_in_the_sky_in_August_2014.JPG",
+  "n_candidates": 6
+ },
+ "rain": {
+  "slug": "rain",
+  "file": "rain.jpg",
+  "ja": "あめ",
+  "en": "Rain",
+  "title": "File:RAIN DROPS (3029827142).jpg",
+  "author": "KNOW MALTA by Peter Grima",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:RAIN_DROPS_(3029827142).jpg",
+  "n_candidates": 6
+ },
+ "snowman": {
+  "slug": "snowman",
+  "file": "snowman.jpg",
+  "ja": "ゆきだるま",
+  "en": "Snowman",
+  "title": "File:Bonhomme de neige 2.jpg",
+  "author": "Sphiiix",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Bonhomme_de_neige_2.jpg",
+  "n_candidates": 6
+ },
+ "rainbow": {
+  "slug": "rainbow",
+  "file": "rainbow.jpg",
+  "ja": "にじ",
+  "en": "Rainbow",
+  "title": "File:Landscape with rainbow and the Old Bridge over the Nam Khan river in Luang Prabang Laos.jpg",
+  "author": "Basile Morin",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Landscape_with_rainbow_and_the_Old_Bridge_over_the_Nam_Khan_river_in_Luang_Prabang_Laos.jpg",
+  "n_candidates": 6
+ },
+ "lightning": {
+  "slug": "lightning",
+  "file": "lightning.jpg",
+  "ja": "かみなり",
+  "en": "Lightning",
+  "title": "File:Thunderstorm And Bolt Lightning (224254879).jpeg",
+  "author": "Sue Corbisez",
+  "license": "CC BY 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Thunderstorm_And_Bolt_Lightning_(224254879).jpeg",
+  "n_candidates": 6
+ },
+ "mountain": {
+  "slug": "mountain",
+  "file": "mountain.jpg",
+  "title": "File:Matterhorn Riffelsee 2005-06-11.jpg",
+  "author": "Dirk Beyer",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Matterhorn_Riffelsee_2005-06-11.jpg"
+ },
+ "sea": {
+  "slug": "sea",
+  "file": "sea.jpg",
+  "ja": "うみ",
+  "en": "Sea",
+  "title": "File:Seal Rocks, Ocean Beach, San Francisco.jpg",
+  "author": "Radomianin",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Seal_Rocks,_Ocean_Beach,_San_Francisco.jpg",
+  "n_candidates": 6
+ },
+ "flower": {
+  "slug": "flower",
+  "file": "flower.jpg",
+  "ja": "はな",
+  "en": "Flower",
+  "title": "File:Sunflower sky backdrop.jpg",
+  "author": "Fir0002",
+  "license": "GFDL 1.2",
+  "source": "https://commons.wikimedia.org/wiki/File:Sunflower_sky_backdrop.jpg",
+  "n_candidates": 6
+ },
+ "tree": {
+  "slug": "tree",
+  "file": "tree.jpg",
+  "title": "File:Isolated oak tree by the Sussex Border Path - geograph.org.uk - 1875136.jpg",
+  "author": "N Chadwick",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Isolated_oak_tree_by_the_Sussex_Border_Path_-_geograph.org.uk_-_1875136.jpg"
+ },
+ "leaves": {
+  "slug": "leaves",
+  "file": "leaves.jpg",
+  "ja": "おちば",
+  "en": "Leaves",
+  "title": "File:Autumn leaves had already fallen-01 (13971902479).jpg",
+  "author": "Sheba_Also 43,000 photos",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Autumn_leaves_had_already_fallen-01_(13971902479).jpg",
+  "n_candidates": 6
+ }
+}

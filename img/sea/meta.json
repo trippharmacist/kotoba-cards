@@ -1,0 +1,26 @@
+{
+ "dolphin": {
+  "slug": "dolphin",
+  "file": "dolphin.jpg",
+  "title": "File:Dolphin near Molokini (2185217108).jpg",
+  "author": "Tony Webster from Portland, Oregon, United States",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Dolphin_near_Molokini_(2185217108).jpg"
+ },
+ "shrimp": {
+  "slug": "shrimp",
+  "file": "shrimp.jpg",
+  "title": "File:Macrobrachium carcinus.jpg",
+  "author": "Hans Hillewaert",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Macrobrachium_carcinus.jpg"
+ },
+ "squid": {
+  "slug": "squid",
+  "file": "squid.jpg",
+  "title": "File:Sepioteuthis sepioidea (Caribbean Reef Squid).jpg",
+  "author": "Nhobgood Nick Hobgood",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Sepioteuthis_sepioidea_(Caribbean_Reef_Squid).jpg"
+ }
+}

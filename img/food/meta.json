@@ -1,0 +1,18 @@
+{
+ "grapes": {
+  "slug": "grapes",
+  "file": "grapes.jpg",
+  "title": "File:2022-10-23 grapes on the vine (focus stack - HiRes).jpg",
+  "author": "Franz van Duns",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:2022-10-23_grapes_on_the_vine_(focus_stack_-_HiRes).jpg"
+ },
+ "peach": {
+  "slug": "peach",
+  "file": "peach.jpg",
+  "title": "File:Young Peach Fruit May (258916395).jpeg",
+  "author": "Randy Everette",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Young_Peach_Fruit_May_(258916395).jpeg"
+ }
+}

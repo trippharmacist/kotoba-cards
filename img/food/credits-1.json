@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "apple",
+    "file": "apple.jpg",
+    "ja": "りんご",
+    "en": "Apple",
+    "title": "File:Red Apple.jpg",
+    "author": "Abhijit Tembhekar from Mumbai, India",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Red_Apple.jpg"
+  },
+  {
+    "slug": "banana",
+    "file": "banana.jpg",
+    "ja": "ばなな",
+    "en": "Banana",
+    "title": "File:Bananas (white background).jpg",
+    "author": "Justus Blümer from Deutschland",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bananas_(white_background).jpg"
+  },
+  {
+    "slug": "orange",
+    "file": "orange.jpg",
+    "ja": "みかん",
+    "en": "Orange",
+    "title": "File:Citrus reticulata fruit on white background.jpg",
+    "author": "Filo gèn'",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Citrus_reticulata_fruit_on_white_background.jpg"
+  },
+  {
+    "slug": "strawberry",
+    "file": "strawberry.jpg",
+    "ja": "いちご",
+    "en": "Strawberry",
+    "title": "File:Strawberry on white background.jpg",
+    "author": "Joselodos",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Strawberry_on_white_background.jpg"
+  },
+  {
+    "slug": "grapes",
+    "file": "grapes.jpg",
+    "ja": "ぶどう",
+    "en": "Grapes",
+    "title": "File:USDA Eat Healthy Food Group Gallery serving size medium bunch purple grapes.jpg",
+    "author": "United States Department of Agriculture",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:USDA_Eat_Healthy_Food_Group_Gallery_serving_size_medium_bunch_purple_grapes.jpg"
+  },
+  {
+    "slug": "watermelon",
+    "file": "watermelon.jpg",
+    "ja": "すいか",
+    "en": "Watermelon",
+    "title": "File:Sliced Watermelon.jpg",
+    "author": "Harsha K R",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sliced_Watermelon.jpg"
+  },
+  {
+    "slug": "peach",
+    "file": "peach.jpg",
+    "ja": "もも",
+    "en": "Peach",
+    "title": "File:Ripe peach.jpg",
+    "author": "Prianxi",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ripe_peach.jpg"
+  },
+  {
+    "slug": "melon",
+    "file": "melon.jpg",
+    "ja": "めろん",
+    "en": "Melon",
+    "title": "File:Canteloupe and cross section.jpg",
+    "author": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8",
+    "license": "GFDL 1.2",
+    "source": "https://commons.wikimedia.org/wiki/File:Canteloupe_and_cross_section.jpg"
+  },
+  {
+    "slug": "pineapple",
+    "file": "pineapple.jpg",
+    "ja": "ぱいなっぷる",
+    "en": "Pineapple",
+    "title": "File:Pineapple and cross section.jpg",
+    "author": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8",
+    "license": "GFDL 1.2",
+    "source": "https://commons.wikimedia.org/wiki/File:Pineapple_and_cross_section.jpg"
+  },
+  {
+    "slug": "lemon",
+    "file": "lemon.jpg",
+    "ja": "れもん",
+    "en": "Lemon",
+    "title": "File:Lemon Fruit.jpg",
+    "author": "ben dalton from leeds, uk",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lemon_Fruit.jpg"
+  },
+  {
+    "slug": "cherry",
+    "file": "cherry.jpg",
+    "ja": "さくらんぼ",
+    "en": "Cherry",
+    "title": "File:Cherry fruit on white background.jpg",
+    "author": "Paolo Neo",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Cherry_fruit_on_white_background.jpg"
+  },
+  {
+    "slug": "kiwi",
+    "file": "kiwi.jpg",
+    "ja": "きうい",
+    "en": "Kiwi",
+    "title": "File:Kiwi (Actinidia chinensis) 1 Luc Viatour edit.jpg",
+    "author": "Luc Viatour",
+    "license": "CC BY-SA 2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Kiwi_(Actinidia_chinensis)_1_Luc_Viatour_edit.jpg"
+  },
+  {
+    "slug": "tomato",
+    "file": "tomato.jpg",
+    "ja": "とまと",
+    "en": "Tomato",
+    "title": "File:Bright red tomato and cross section02.jpg",
+    "author": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8",
+    "license": "GFDL 1.2",
+    "source": "https://commons.wikimedia.org/wiki/File:Bright_red_tomato_and_cross_section02.jpg"
+  },
+  {
+    "slug": "eggplant",
+    "file": "eggplant.jpg",
+    "ja": "なす",
+    "en": "Eggplant",
+    "title": "File:Aubergine.jpg",
+    "author": "Horst Frank",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Aubergine.jpg"
+  },
+  {
+    "slug": "carrot",
+    "file": "carrot.jpg",
+    "ja": "にんじん",
+    "en": "Carrot",
+    "title": "File:Vegetable-Carrot-Bundle-wStalks.jpg",
+    "author": "Evan-Amos",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Vegetable-Carrot-Bundle-wStalks.jpg"
+  }
+]

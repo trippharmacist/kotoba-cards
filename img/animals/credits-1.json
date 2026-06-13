@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "dog",
+    "file": "dog.jpg",
+    "ja": "いぬ",
+    "en": "Dog",
+    "title": "File:Picography-shiba-inu-dog-forest-walk-sm-1.jpg",
+    "author": "Picography",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Picography-shiba-inu-dog-forest-walk-sm-1.jpg"
+  },
+  {
+    "slug": "cat",
+    "file": "cat.jpg",
+    "ja": "ねこ",
+    "en": "Cat",
+    "title": "File:Cat November 2010-1a.jpg",
+    "author": "Alvesgaspar",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg"
+  },
+  {
+    "slug": "rabbit",
+    "file": "rabbit.jpg",
+    "ja": "うさぎ",
+    "en": "Rabbit",
+    "title": "File:Oryctolagus cuniculus Tasmania 2.jpg",
+    "author": "JJ Harrison (https://www.jjharrison.com.au/)",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Oryctolagus_cuniculus_Tasmania_2.jpg"
+  },
+  {
+    "slug": "bear",
+    "file": "bear.jpg",
+    "ja": "くま",
+    "en": "Bear",
+    "title": "File:Brown bear (Ursus arctos arctos) running.jpg",
+    "author": "Malene Thyssen",
+    "license": "CC BY 2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Brown_bear_(Ursus_arctos_arctos)_running.jpg"
+  },
+  {
+    "slug": "panda",
+    "file": "panda.jpg",
+    "ja": "ぱんだ",
+    "en": "Panda",
+    "title": "File:Lightmatter panda.jpg",
+    "author": "Aaron Logan",
+    "license": "CC BY 1.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lightmatter_panda.jpg"
+  },
+  {
+    "slug": "lion",
+    "file": "lion.jpg",
+    "ja": "らいおん",
+    "en": "Lion",
+    "title": "File:002 The lion king Snyggve in the Serengeti National Park Photo by Giles Laurent.jpg",
+    "author": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+    "slug": "tiger",
+    "file": "tiger.jpg",
+    "ja": "とら",
+    "en": "Tiger",
+    "title": "File:Bengal tiger (Panthera tigris tigris) female 3.jpg",
+    "author": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_3.jpg"
+  },
+  {
+    "slug": "elephant",
+    "file": "elephant.jpg",
+    "ja": "ぞう",
+    "en": "Elephant",
+    "title": "File:African Bush Elephant.jpg",
+    "author": "Muhammad Mahdi Karim",
+    "license": "GFDL 1.2",
+    "source": "https://commons.wikimedia.org/wiki/File:African_Bush_Elephant.jpg"
+  },
+  {
+    "slug": "giraffe",
+    "file": "giraffe.jpg",
+    "ja": "きりん",
+    "en": "Giraffe",
+    "title": "File:Giraffe Standing alone in Serengeti, Tanzania.jpg",
+    "author": "Plasticdying",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Giraffe_Standing_alone_in_Serengeti,_Tanzania.jpg"
+  },
+  {
+    "slug": "zebra",
+    "file": "zebra.jpg",
+    "ja": "しまうま",
+    "en": "Zebra",
+    "title": "File:Equus quagga burchellii - Etosha, 2014.jpg",
+    "author": "Yathin S Krishnappa",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Equus_quagga_burchellii_-_Etosha,_2014.jpg"
+  },
+  {
+    "slug": "monkey",
+    "file": "monkey.jpg",
+    "ja": "さる",
+    "en": "Monkey",
+    "title": "File:Kopfstudie eines Japanmakaken (Macaca fuscata) im Jigokudani Yaen Kōen, Japan.jpg",
+    "author": "Frank Schulenburg",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kopfstudie_eines_Japanmakaken_(Macaca_fuscata)_im_Jigokudani_Yaen_K%C5%8Den,_Japan.jpg"
+  },
+  {
+    "slug": "pig",
+    "file": "pig.jpg",
+    "ja": "ぶた",
+    "en": "Pig",
+    "title": "File:Cochon domestique (Sus scrofa domesticus) (2).jpg",
+    "author": "Gzen92",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cochon_domestique_(Sus_scrofa_domesticus)_(2).jpg"
+  },
+  {
+    "slug": "cow",
+    "file": "cow.jpg",
+    "ja": "うし",
+    "en": "Cow",
+    "title": "File:Holstein Friesian UK Yorkshire July 2011.jpg",
+    "author": "Littledumpy34",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Holstein_Friesian_UK_Yorkshire_July_2011.jpg"
+  },
+  {
+    "slug": "horse",
+    "file": "horse.jpg",
+    "ja": "うま",
+    "en": "Horse",
+    "title": "File:Коњ дорат, Bay Horse.jpg",
+    "author": "Делфина",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D1%9A_%D0%B4%D0%BE%D1%80%D0%B0%D1%82,_Bay_Horse.jpg"
+  },
+  {
+    "slug": "sheep",
+    "file": "sheep.jpg",
+    "ja": "ひつじ",
+    "en": "Sheep",
+    "title": "File:A brown ewe portrait.jpg",
+    "author": "Jim Champion from Southampton, UK",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:A_brown_ewe_portrait.jpg"
+  }
+]

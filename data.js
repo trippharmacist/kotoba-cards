@@ -78,36 +78,36 @@ const DECKS = [
     name: "たべもの",
     emoji: "🍎",
     cards: [
-      { e: "🍎", ja: "りんご", en: "Apple", s: { ja: "しゃくしゃく！", en: "Crunch crunch!" }, img: "img/food/apple.jpg" },
+      { e: "🍎", ja: "りんご", en: "Apple", img: "img/food/apple.jpg" },
       { e: "🍌", ja: "ばなな", en: "Banana", img: "img/food/banana.jpg" },
       { e: "🍊", ja: "みかん", en: "Orange", img: "img/food/orange.jpg" },
       { e: "🍓", ja: "いちご", en: "Strawberry", img: "img/food/strawberry.jpg" },
       { e: "🍇", ja: "ぶどう", en: "Grapes", img: "img/food/grapes.jpg" },
-      { e: "🍉", ja: "すいか", en: "Watermelon", s: { ja: "しゃくしゃく！", en: "Crunch crunch!" }, img: "img/food/watermelon.jpg" },
+      { e: "🍉", ja: "すいか", en: "Watermelon", img: "img/food/watermelon.jpg" },
       { e: "🍑", ja: "もも", en: "Peach", img: "img/food/peach.jpg" },
       { e: "🍈", ja: "めろん", en: "Melon", img: "img/food/melon.jpg" },
       { e: "🍍", ja: "ぱいなっぷる", en: "Pineapple", img: "img/food/pineapple.jpg" },
-      { e: "🍋", ja: "れもん", en: "Lemon", s: { ja: "すっぱーい！", en: "So sour!" }, img: "img/food/lemon.jpg" },
+      { e: "🍋", ja: "れもん", en: "Lemon", img: "img/food/lemon.jpg" },
       { e: "🍒", ja: "さくらんぼ", en: "Cherry", img: "img/food/cherry.jpg" },
       { e: "🥝", ja: "きうい", en: "Kiwi", img: "img/food/kiwi.jpg" },
       { e: "🍅", ja: "とまと", en: "Tomato", img: "img/food/tomato.jpg" },
       { e: "🍆", ja: "なす", en: "Eggplant", img: "img/food/eggplant.jpg" },
-      { e: "🥕", ja: "にんじん", en: "Carrot", s: { ja: "ぽりぽり！", en: "Crunch crunch!" }, img: "img/food/carrot.jpg" },
+      { e: "🥕", ja: "にんじん", en: "Carrot", img: "img/food/carrot.jpg" },
       { e: "🌽", ja: "とうもろこし", en: "Corn", img: "img/food/corn.jpg" },
       { e: "🥦", ja: "ぶろっこりー", en: "Broccoli", img: "img/food/broccoli.png" },
       { e: "🍄", ja: "きのこ", en: "Mushroom", img: "img/food/mushroom.jpg" },
       { e: "🥔", ja: "じゃがいも", en: "Potato", img: "img/food/potato.jpg" },
       { e: "🧅", ja: "たまねぎ", en: "Onion", img: "img/food/onion.jpg" },
-      { e: "🍞", ja: "ぱん", en: "Bread", s: { ja: "もぐもぐ！", en: "Yum yum!" }, img: "img/food/bread.jpg" },
-      { e: "🍙", ja: "おにぎり", en: "Rice ball", s: { ja: "もぐもぐ！", en: "Yum yum!" }, img: "img/food/rice-ball.jpg" },
+      { e: "🍞", ja: "ぱん", en: "Bread", img: "img/food/bread.jpg" },
+      { e: "🍙", ja: "おにぎり", en: "Rice ball", img: "img/food/rice-ball.jpg" },
       { e: "🥚", ja: "たまご", en: "Egg", img: "img/food/egg.jpg" },
-      { e: "🥛", ja: "ぎゅうにゅう", en: "Milk", s: { ja: "ごくごく！", en: "Gulp gulp!" }, img: "img/food/milk.jpg" },
+      { e: "🥛", ja: "ぎゅうにゅう", en: "Milk", img: "img/food/milk.jpg" },
       { e: "🧀", ja: "ちーず", en: "Cheese", img: "img/food/cheese.jpg" },
-      { e: "🍰", ja: "けーき", en: "Cake", s: { ja: "おいしー！", en: "Yummy!" }, img: "img/food/cake.jpg" },
-      { e: "🍦", ja: "あいすくりーむ", en: "Ice cream", s: { ja: "つめたーい！", en: "So cold!" }, img: "img/food/ice-cream.jpg" },
-      { e: "🍪", ja: "くっきー", en: "Cookie", s: { ja: "さくさく！", en: "Crunch crunch!" }, img: "img/food/cookie.jpg" },
+      { e: "🍰", ja: "けーき", en: "Cake", img: "img/food/cake.jpg" },
+      { e: "🍦", ja: "あいすくりーむ", en: "Ice cream", img: "img/food/ice-cream.jpg" },
+      { e: "🍪", ja: "くっきー", en: "Cookie", img: "img/food/cookie.jpg" },
       { e: "🍫", ja: "ちょこれーと", en: "Chocolate", img: "img/food/chocolate.jpg" },
-      { e: "🍮", ja: "ぷりん", en: "Pudding", s: { ja: "ぷるぷる！", en: "Wobble wobble!" }, img: "img/food/pudding.jpg" }
+      { e: "🍮", ja: "ぷりん", en: "Pudding", img: "img/food/pudding.jpg" }
     ]
   },
   {
@@ -115,23 +115,23 @@ const DECKS = [
     name: "のりもの",
     emoji: "🚗",
     cards: [
-      { e: "🚗", ja: "くるま", en: "Car", s: { ja: "ぶーぶー！", en: "Vroom vroom!" }, img: "img/vehicles/car.jpg" },
-      { e: "🚌", ja: "ばす", en: "Bus", s: { ja: "ぶーん！", en: "Vroom!" }, img: "img/vehicles/bus.jpg" },
-      { e: "🚚", ja: "とらっく", en: "Truck", s: { ja: "ぶろろろー！", en: "Vroom vroom!" }, img: "img/vehicles/truck.jpg" },
+      { e: "🚗", ja: "くるま", en: "Car", img: "img/vehicles/car.jpg" },
+      { e: "🚌", ja: "ばす", en: "Bus", img: "img/vehicles/bus.jpg" },
+      { e: "🚚", ja: "とらっく", en: "Truck", img: "img/vehicles/truck.jpg" },
       { e: "🚒", ja: "しょうぼうしゃ", en: "Fire engine", s: { ja: "うーうー、かんかん！", en: "Wee-oo wee-oo!" }, img: "img/vehicles/fire-engine.jpg" },
       { e: "🚑", ja: "きゅうきゅうしゃ", en: "Ambulance", s: { ja: "ぴーぽーぴーぽー！", en: "Wee-oo wee-oo!" }, img: "img/vehicles/ambulance.jpg" },
       { e: "🚓", ja: "ぱとかー", en: "Police car", s: { ja: "うーうー！", en: "Wee-oo wee-oo!" }, img: "img/vehicles/police-car.jpg" },
-      { e: "🚃", ja: "でんしゃ", en: "Train", s: { ja: "がたんごとん！", en: "Choo choo!" }, img: "img/vehicles/train.jpg" },
-      { e: "🚅", ja: "しんかんせん", en: "Bullet train", s: { ja: "びゅーん！", en: "Whoosh!" }, img: "img/vehicles/bullet-train.jpg" },
-      { e: "🚂", ja: "きかんしゃ", en: "Steam train", s: { ja: "しゅっしゅっぽっぽ！", en: "Choo choo!" }, img: "img/vehicles/steam-train.jpg" },
-      { e: "✈️", ja: "ひこうき", en: "Airplane", s: { ja: "びゅーん！", en: "Whoosh!" }, img: "img/vehicles/airplane.jpg" },
-      { e: "🚁", ja: "へりこぷたー", en: "Helicopter", s: { ja: "ばらばらばら！", en: "Whirr whirr!" }, img: "img/vehicles/helicopter.jpg" },
-      { e: "🚢", ja: "ふね", en: "Ship", s: { ja: "ぼーっ！", en: "Toot toot!" }, img: "img/vehicles/ship.jpg" },
-      { e: "🚲", ja: "じてんしゃ", en: "Bicycle", s: { ja: "りんりん！", en: "Ring ring!" }, img: "img/vehicles/bicycle.jpg" },
-      { e: "🏍️", ja: "ばいく", en: "Motorcycle", s: { ja: "ぶろろろ！", en: "Vroom vroom!" }, img: "img/vehicles/motorcycle.jpg" },
+      { e: "🚃", ja: "でんしゃ", en: "Train", img: "img/vehicles/train.jpg" },
+      { e: "🚅", ja: "しんかんせん", en: "Bullet train", img: "img/vehicles/bullet-train.jpg" },
+      { e: "🚂", ja: "きかんしゃ", en: "Steam train", img: "img/vehicles/steam-train.jpg" },
+      { e: "✈️", ja: "ひこうき", en: "Airplane", img: "img/vehicles/airplane.jpg" },
+      { e: "🚁", ja: "へりこぷたー", en: "Helicopter", img: "img/vehicles/helicopter.jpg" },
+      { e: "🚢", ja: "ふね", en: "Ship", img: "img/vehicles/ship.jpg" },
+      { e: "🚲", ja: "じてんしゃ", en: "Bicycle", img: "img/vehicles/bicycle.jpg" },
+      { e: "🏍️", ja: "ばいく", en: "Motorcycle", img: "img/vehicles/motorcycle.jpg" },
       { e: "🚕", ja: "たくしー", en: "Taxi", img: "img/vehicles/taxi.jpg" },
-      { e: "🚜", ja: "とらくたー", en: "Tractor", s: { ja: "ぶろろろー！", en: "Vroom!" }, img: "img/vehicles/tractor.jpg" },
-      { e: "🚀", ja: "ろけっと", en: "Rocket", s: { ja: "ごごごー！", en: "Whoosh!" }, img: "img/vehicles/rocket.jpg" },
+      { e: "🚜", ja: "とらくたー", en: "Tractor", img: "img/vehicles/tractor.jpg" },
+      { e: "🚀", ja: "ろけっと", en: "Rocket", img: "img/vehicles/rocket.jpg" },
       { e: "🛸", ja: "ゆーふぉー", en: "UFO" }
     ]
   },
@@ -177,9 +177,9 @@ const DECKS = [
       { e: "⭕", ja: "まる", en: "Circle" },
       { e: "🔺", ja: "さんかく", en: "Triangle" },
       { e: "🟥", ja: "しかく", en: "Square" },
-      { e: "⭐", ja: "ほし", en: "Star", s: { ja: "きらきら！", en: "Twinkle twinkle!" } },
+      { e: "⭐", ja: "ほし", en: "Star" },
       { e: "❤️", ja: "はーと", en: "Heart" },
-      { e: "💎", ja: "だいやもんど", en: "Diamond", s: { ja: "きらきら！", en: "Twinkle twinkle!" } }
+      { e: "💎", ja: "だいやもんど", en: "Diamond" }
     ]
   },
   {
@@ -190,15 +190,15 @@ const DECKS = [
       { e: "☀️", ja: "たいよう", en: "Sun" },
       { e: "🌙", ja: "つき", en: "Moon", img: "img/nature/moon.jpg" },
       { e: "☁️", ja: "くも", en: "Cloud", img: "img/nature/cloud.jpg" },
-      { e: "☔", ja: "あめ", en: "Rain", s: { ja: "ざーざー！", en: "Pitter patter!" }, img: "img/nature/rain.jpg" },
+      { e: "☔", ja: "あめ", en: "Rain", img: "img/nature/rain.jpg" },
       { e: "⛄", ja: "ゆきだるま", en: "Snowman", img: "img/nature/snowman.jpg" },
       { e: "🌈", ja: "にじ", en: "Rainbow", img: "img/nature/rainbow.jpg" },
-      { e: "⚡", ja: "かみなり", en: "Lightning", s: { ja: "ごろごろ、どっかーん！", en: "Rumble rumble!" }, img: "img/nature/lightning.jpg" },
-      { e: "⛰️", ja: "やま", en: "Mountain", s: { ja: "やっほー！", en: "Yoo-hoo!" }, img: "img/nature/mountain.jpg" },
-      { e: "🌊", ja: "うみ", en: "Sea", s: { ja: "ざぶーん！", en: "Splash!" }, img: "img/nature/sea.jpg" },
+      { e: "⚡", ja: "かみなり", en: "Lightning", img: "img/nature/lightning.jpg" },
+      { e: "⛰️", ja: "やま", en: "Mountain", img: "img/nature/mountain.jpg" },
+      { e: "🌊", ja: "うみ", en: "Sea", img: "img/nature/sea.jpg" },
       { e: "🌸", ja: "はな", en: "Flower", img: "img/nature/flower.jpg" },
       { e: "🌳", ja: "き", en: "Tree", img: "img/nature/tree.jpg" },
-      { e: "🍂", ja: "おちば", en: "Leaves", s: { ja: "かさかさ！", en: "Rustle rustle!" }, img: "img/nature/leaves.jpg" }
+      { e: "🍂", ja: "おちば", en: "Leaves", img: "img/nature/leaves.jpg" }
     ]
   },
   {
@@ -209,10 +209,10 @@ const DECKS = [
       { e: "👀", ja: "め", en: "Eyes" },
       { e: "👂", ja: "みみ", en: "Ear" },
       { e: "👃", ja: "はな", en: "Nose" },
-      { e: "👄", ja: "くち", en: "Mouth", s: { ja: "あーん！", en: "Ahh!" } },
-      { e: "✋", ja: "て", en: "Hand", s: { ja: "ぱちぱち！", en: "Clap clap!" } },
-      { e: "🦶", ja: "あし", en: "Foot", s: { ja: "とことこ！", en: "Stomp stomp!" } },
-      { e: "🦷", ja: "は", en: "Tooth", s: { ja: "がじがじ！", en: "Chomp chomp!" } }
+      { e: "👄", ja: "くち", en: "Mouth" },
+      { e: "✋", ja: "て", en: "Hand" },
+      { e: "🦶", ja: "あし", en: "Foot" },
+      { e: "🦷", ja: "は", en: "Tooth" }
     ]
   }
 ];

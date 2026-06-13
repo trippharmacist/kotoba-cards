@@ -41,7 +41,8 @@
 
   // ---------- 音声読み上げ ----------
   let voices = [];
-  function refreshVoices() { voices = speechSynthesis.getVoices(); }
+  let voiceCache = {}; // lang -> 選定済みボイス（毎回探索しない）
+  function refreshVoices() { voices = speechSynthesis.getVoices(); voiceCache = {}; }
   refreshVoices();
   if (speechSynthesis.onvoiceschanged !== undefined) {
     speechSynthesis.onvoiceschanged = refreshVoices;
@@ -54,19 +55,26 @@
     "Superstar", "Trinoids", "Whisper", "Wobble", "Zarvox"];
 
   function pickVoice(lang) {
+    if (voiceCache[lang]) return voiceCache[lang];
     const prefix = lang === "ja" ? "ja" : "en";
     let list = voices.filter((v) => v.lang.replace("_", "-").toLowerCase().startsWith(prefix));
     list = list.filter((v) => !NOVELTY.some((n) => v.name.startsWith(n)));
     const score = (v) => {
+      const uri = (v.voiceURI || "") + " " + v.name;
       let s = 0;
-      if (/enhanced|premium|natural|neural|拡張/i.test(v.name)) s += 8;
-      if (lang === "en" && /^(Samantha|Ava|Allison|Susan|Zoe|Nicky|Joelle|Alex|Karen|Daniel|Moira|Tessa|Serena|Google US English|Microsoft)/.test(v.name)) s += 4;
-      if (lang === "ja" && /^(Kyoko|O-?Ren|Google 日本語|Hattori)/.test(v.name)) s += 4;
+      // 端末の高音質（ニューラル）音声を最優先。iOSのSiri声・拡張声・各社neural声を強く優先する
+      if (/siri/i.test(uri)) s += 30;
+      if (/neural|premium|enhanced|natural|拡張|高品質/i.test(uri)) s += 20;
+      if (/eloquence|compact/i.test(uri)) s -= 10; // 旧式・低品質エンジンは避ける
+      if (lang === "en" && /^(Samantha|Ava|Allison|Susan|Zoe|Nicky|Joelle|Aaron|Karen|Daniel|Serena|Google US English|Microsoft)/.test(v.name)) s += 4;
+      if (lang === "ja" && /^(Kyoko|O-?Ren|Google 日本語|Hattori|Sora|Nanami)/.test(v.name)) s += 4;
       if (v.lang.replace("_", "-").toLowerCase() === (lang === "ja" ? "ja-jp" : "en-us")) s += 2;
-      if (v.localService) s += 1;
+      if (!v.localService) s += 1; // クラウド/ニューラル声がある環境ではそちらを優先
       return s;
     };
-    return list.sort((a, b) => score(b) - score(a))[0] || null;
+    const best = list.sort((a, b) => score(b) - score(a))[0] || null;
+    voiceCache[lang] = best;
+    return best;
   }
 
   function speak(text, lang, opts) {
